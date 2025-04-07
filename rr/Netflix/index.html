@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <audio id="myAudio" autoplay loop muted>
+      <source src="white.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+      window.onload = function () {
+          let audio = document.getElementById("myAudio");
+          audio.muted = false; // Unmute setelah halaman selesai dimuat
+          audio.play().catch(error => console.log("Autoplay dicegah: ", error));
+      };
+  </script>
+  
+  
+  
+    <!-- Required meta tagss for new branch -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./landing.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <title>Hello, world!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    
+    <div style="position: relative;">
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding-left netflix-padding-right">
+      <div class="container-fluid">
+        <div class="netflix-row">
+          <div class="left d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo.png" alt="">
+            </a>
+            <div  class="netflix-nav">
+               <section>
+                  <button>Home</button>
+                  <button>TV Shows</button>
+                  <button>Movies</button>
+                  <button>News & Popular</button>
+                  <button>My List</button>
+               </section>
+            </div>
+            <div class="netflix-dropdown-box dropdown">
+              <button class="netflix-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Browse
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">TV Shows</a></li>
+                <li><a class="dropdown-item" href="#">Movies</a></li>
+                <li><a class="dropdown-item" href="#">News & Popular</a></li>
+                <li><a class="dropdown-item" href="#">My List</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right d-flex align-items-center">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-bell-fill"></i>
+            <section class="netflix-profile">
+                <img src="./images/profile.jpg" alt="Profile" style="width: 30px; height: 30px; border-radius: 50%;">
+             </section>
+            </section>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- /header -->
+
+
+    <!-- video -->
+      <div class="">
+         <section class="netflix-home-video">
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <img src="./images/ini.jpg">
+            <div class="content">
+                <section class="left">
+                    <img src="./images/image2.web" alt="">
+                    <div class="movie-info">
+                      <h1>"A Love Letter Only You Can Read"</h1>
+                      <p class="dedication">DEAR, NAYCYLA DYAHAYU</p>
+                      <p class="dedication" style="font-size: 22px;">hai cylaa ! i have something for you :< </p>
+
+                  </div>                  
+                    <div class="d-flex mt-2">
+                      <button class="btn btn-light m-2" data-bs-toggle="modal" data-bs-target="#playNowModal">
+                        <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i> Play Now
+                      </button>
+                      <button class="btn btn-secondary m-2"><i class="bi bi-info-circle" style=" padding: 0%;"></i> More Info</button>
+                    </div>
+                </section>
+               
+            </div>
+          </section>
+         
+      </div>
+    <!-- video -->
+
+      <!-- sliders -->
+      <div class="slider-box">
+        <div class="container-fluid slider">
+          <section class="d-flex justify-content-between margin-right">
+            <p class="text-white"> <b/b> </p>
+          </section>
+            
+           
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex" >
+                  <div class="card" >
+                    <img src="./images/trending/img7.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img3.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img1.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="container-fluid  slide2">
+          <section class="d-flex justify-content-center position-relative margin-right margin-title">
+            <p class="text-white mx-auto"> <b>Hollywood</b> </p>
+
+          </section>
+arousel">
+            
+            <div class="carousel-inner" style="position: relative; overflow: visible;">
+              <div class="carousel-item active">
+                <section class="d-flex" >
+                  <div class="card" >
+                    <img src="./images/trending/img6.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            
+                            
+                          </div>
+                          <div>
+                            
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           
+                             
+                          
+                          </section>
+                          <span class="netflix-card-text text-white"></span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/trending/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/trending/img3.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div> <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            
+                            
+                          </div>
+                          <div>
+                            
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           
+                             
+                          
+                          </section>
+                          <span class="netflix-card-text text-white"></span>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img1.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex ">
+                  <div class="card">
+                    <img src="./images/trending/img1.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/trending/img3.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img1.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex ">
+                  <div class="card" >
+                    <img src="./images/trending/img7.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img3.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img1.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="container-fluid  slide3">
+          <section class="d-flex justify-content-center position-relative margin-right margin-title2">
+            <p class="text-white mx-auto"> <b>Bollywood</b> </p>
+           
+          </section>
+       
+            
+            <div class="carousel-inner" style="position: relative; overflow: visible;">
+              <div class="carousel-item active">
+                <section class="d-flex " >
+                  <div class="card" >
+                    <img src="./images/trending/revisi1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            
+                            
+                          </div>
+                          <div>
+                            
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           
+                             
+                          
+                          </section>
+                          <span class="netflix-card-text text-white"></span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/trending/revisi2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/trending/revisi3.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div> <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            
+                            
+                          </div>
+                          <div>
+                            
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           
+                             
+                          
+                          </section>
+                          <span class="netflix-card-text text-white"></span>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/revisi4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/revisi5.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/revisi6.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex">
+                  <div class="card">
+                    <img src="./images/trending/salah1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/salah2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./images/trending/salah3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/salah4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/salah5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/salah6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex ">
+                  <div class="card" >
+                    <img src="./images/trending/img7.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img3.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img1.webp" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <img src="./images/trending/img6.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          
+                          
+                        </div>
+                        <div>
+                          
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         
+                           
+                        
+                        </section>
+                        <span class="netflix-card-text text-white"></span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- sliders-end -->
+
+
+      <!-- footer  -->
+      <div class="container footer">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="row">
+                  <div class="col-md-3">
+                        <ul>
+                          <li>Audio and Subtitle</li>
+                          <li>Media Center</li>
+                          <li>Privacy</li>
+                          <li>Contact Us</li>
+                        </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <ul>
+                      <li>Audio description</li>
+                      <li>Investor Relation</li>
+                      <li>Terms and Conditions</li>
+                      <li>Legal Notices</li>
+                    </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li>Help Center</li>
+                  <li>Jobs</li>
+            
+                </ul>
+               </div>
+               <div class="col-md-3">
+                <ul>
+                  <li>Gift card</li>
+                  <li>Subscription</li>
+            
+                </ul>
+               </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 mx-auto">
+              <div class="row">
+               
+                <div class="col">
+                  <p class="copy-right">@netflix copyright</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vertically Centered Scrollable Modal</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+    
+
+    
+    <!-- Modal Bootstrap 5 -->
+    <div class="modal fade" id="playNowModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- modal-dialog-centered untuk vertikal center -->
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title">A Love Letter Only You Can Read</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="max-height: 70vh; overflow-y: auto;"> <!-- max-height untuk scrollable -->
+            <!-- Menambahkan gambar di atas -->
+            <img src="./images/trending/img2.jpeg" class="img-fluid mb-3" alt="Descriptive Alt Text"> <!-- Ganti URL dengan gambar yang diinginkan -->
+            <p>Ada banyak hal yang ingin aku sampaikan, tapi mungkin selama ini aku lebih suka menunjukkannya pelan-pelan. Lewat cara aku selalu ada buat dengerin cerita kamu, lewat obrolan panjang yang nggak pernah membosankan, atau lewat hal-hal kecil yang mungkin nggak kamu sadari, tapi selalu aku perhatikan.</p>
+
+<p>Aku suka caramu bercerita—tentang hal-hal random, tentang hari-hari kamu yang seru atau melelahkan, bahkan tentang sesuatu yang kamu ulang-ulang tapi tetap aku dengarkan dengan senang hati. Karena di setiap kata yang kamu ucapkan, aku merasa lebih dekat. Aku menikmati setiap momen di mana aku bisa jadi seseorang yang selalu ada untuk mendengar kamu.</p>
+
+<p>Dan dari semua cerita yang sudah kita bagi, aku ingin menulis bab baru—bukan hanya sebagai pendengar, tapi sebagai seseorang yang ingin ada di setiap halaman cerita kamu selanjutnya.</p>
+
+<p>Jadi, izinkan aku bertanya...<br>
+Maukah kamu menjadikan cerita ini lebih dari sekadar kisah yang diceritakan?</p>
+          </div>
+          <div class="modal-footer border-secondary">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-danger">Putar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <script src="./javaScript.js"></script>
+  </body>
+</html>
